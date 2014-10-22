@@ -3,7 +3,7 @@ DN Paint
 
 ![DN Paint Screenshot](https://github.com/andrejewski/dn-paint/blob/master/screenshot.jpg?raw=true)
 
-A Chrome extension for making the art of cover and protrait pictures on Designer News faster.
+A Chrome extension for making the art of header and portrait pictures on Designer News faster.
 
 **This is not officially supported and is in active development.**
 
@@ -18,15 +18,16 @@ Since DN Paint is not complete, you must install it manually on Chrome for it to
 **Two colors at once** DN Paint allows you to use two colors at once: the primary color is used via the left mouse click, the secondary by the right click. This is a conveinence that has a few bugs right now. Left clicks are more reliable.
 
 **Paint tools** DN paint includes three standard paint tools:
-	- draw, which is what existed before except this does not rotate through colors
-	- fill, which is the standard paint bucket action
-	- clear, which gives you a clean slate
+
+- draw, which is what existed before except this does not rotate through colors
+- fill, which is the standard paint bucket action
+- clear, which gives you a clean slate
 
 **Tool?** Nyan is the fourth color tool which changes the color on every draw, cycling similar to the original painting interface.
 
 ## Problems 
 
-DN Paint has to work within and against Layervault's drawing rules, which essentially means any action their code takes DN Paint has to manually reverse. This has lead to a lot of problems with the UI.
+DN Paint has to work within and against Layervault's drawing rules, which essentially means any action their code takes DN Paint has to manually reverse. This has lead to a lot of problems with the user interface.
 
 There are many possible fixes. We could try to disable the event callbacks Layervault listens for, but I have not found an adequate solution there. I have also thought about making a virtual dom to mimic the events taken on the interface, merging those changes on to the canvas when complete. But that idea probably would suffer from performance issues as well as limit the types of interactions possible.
 
@@ -38,11 +39,11 @@ The source of the entire extension can be found in the `chrome` directory.
 
 For pull requests, I would only like changes to the source code. Please do not submit the packed extension as we cannot trust that code to be secure. I will check each pull and build it myself for releases.
 
-All code should target the newest stable release of Chrome (not Canary). If you want to contribute for a different browser, just create the source folder by browser name (i.e. `firefox`) and work from there.
+All code should target the newest stable release of Chrome (not Canary). If you want to contribute for a different browser, awesome!. Just create the source folder by browser name (i.e. `firefox`) and work from there.
 
-## People who use this also like...
+## Other Repositories
 
-I made some other programs that fit within this space of interest. 
+I have made some other programs that fit within this space of interest. 
 
 [**txt2text**](https://github.com/andrejewski/txt2text) is a Chrome extension that replaces a customizable list of acronyms with their expanded forms.
 
