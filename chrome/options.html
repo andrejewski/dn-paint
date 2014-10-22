@@ -1,0 +1,34 @@
+<!-- options.html -->
+<!doctype html>
+<html>
+<head>
+	<title>txt2text Options</title>
+	<style type='text/css'>
+html, body {margin: 0px; font-size: 1em; line-height: 1.4em;}
+* {border-box: border-sizing; font-family: 'Helvetica Neue', Helvetica;}
+
+.modal {margin: 2.4em auto; max-width: 440px;}
+h1 {color: #333;}
+p {color: #555;}
+p.plug {color: #888; font-size: 0.9em;}
+
+a {text-decoration: underline; color: inherit;}
+a:hover {color: #08f;}
+
+input {display: inline; border: none; background-color: #def; font-family: inherit; font-size: inherit; text-align: center; border-radius: 3px; padding: 3px 5px;}
+
+#length {width: 40px;}
+	</style>
+</head>
+<body>
+	<div class='modal'>
+		<h1>Dribbble Responses</h1>
+		<p>This Chrome extension hides comments that are less than <input id='length' type='number' value='70'/> chracters long, are not by the posting designer, and/or are not on the work of the world's greatest designer ever, <input id='username' type='text' placeholder='your dribbble username'>.</p>
+
+		<p>Note that your comments on others' work will be hidden if they are below your own character length. Insightful critism and conversation make the world a better place.</p>
+
+		<p class='plug'> Extension by <a href='http://chrisandrejewski.com/'>Chris Andrejewski</a>. If you have praise or concerns, browse the source on <a href='http://github.com/andrejewski/dribbble-responses'>Github</a> or just talk to <a href='mailto:christopher.andrejewski@gmail.com'>me in human.</a></p>
+	</div>
+	<script type='text/javascript' src='options.js'></script>
+</body>
+</html>

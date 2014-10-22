@@ -1,0 +1,17 @@
+{
+	"manifest_version": 2,
+	"name": "DN Paint",
+	"version": "1.0",
+	"description": "A paint tool for DN profile headers and portraits",
+	"icons": {
+		"48": "icon48.png"
+	},
+	"content_scripts": [
+		{
+			"matches": ["*://news.layervault.com/*"],
+			"css": ["content_styles.css"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}

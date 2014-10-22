@@ -1,0 +1,44 @@
+
+.dn-paint-pane {
+	padding: 5px;
+	margin-top: 160px;
+}
+
+.dn-paint-region {
+	padding: 5px 0px 10px;
+	border-bottom: 1px solid #c3c9d2;
+	margin: 5px;
+}
+
+.dn-paint-region:last-child {
+	border-bottom: none;
+}
+
+.dn-paint-palette {
+	font-size: 0px;
+}
+
+.dn-paint-color-view {
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	vertical-align: middle;
+	margin: 0px;
+	padding: 0px;
+}
+
+.dn-paint-tool {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	vertical-align: middle;
+	line-height: 50px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.dn-paint-tool-selected {
+	font-weight: bold;
+	color: #121821;
+	background-color: #c3c9d2;
+}
